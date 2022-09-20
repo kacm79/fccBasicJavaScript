@@ -10,3 +10,9 @@ const myAdverb = "quickly";
 // Only change code below this line
 const wordBlanks = "The " + myAdjective + " " + myNoun + " from the farm " + myVerb + " " + myAdverb + " through the garden."; // Change this line
 // Only change code above this line
+
+// Shopping list
+
+const myList = [["Apples", 26], ["Oranges", 13], ["Tofu", 1], ["Noodles", 3], ["Oil", 2]];
+
+
