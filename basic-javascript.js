@@ -73,4 +73,20 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 // Fibonnacci Generator from AppBrewery Web Dev Course
 
+function fibonacciGenerator (n) {
+  let result = "";
+  if (n==1) {
+    result = [0];
+  } else if (n==2) {
+    result = [0, 1];
+  } else {
+    result = [0, 1,];
+    while (result.length < n) {
+      result.push(result[result.length - 1] + result[result.length - 2]);
+    }  
+  }
+  return result;
+}
+console.log(fibonacciGenerator(20));
+
 
