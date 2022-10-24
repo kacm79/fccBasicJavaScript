@@ -38,3 +38,15 @@ function findLongestWordLength(str) {
 }
 
 
+//Return the largest numbers in arrays
+
+function largestOfFour(arr) {
+
+  let largestNumbers = [];
+  for (let i = 0; i < arr.length; i++) {
+ let sortedArray = arr[i].sort(function(a, b){return a-b});
+    largestNumbers.push(sortedArray[sortedArray.length -1]);
+  }
+  return largestNumbers;
+}
+
