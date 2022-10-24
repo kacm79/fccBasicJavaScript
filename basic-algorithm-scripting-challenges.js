@@ -23,3 +23,18 @@ let multipliedResult = 1;
   return multipliedResult;
 }
 
+//Find the longest word in a string
+
+function findLongestWordLength(str) {
+  const splitStr = str.split(" ");
+
+  let wordLength = splitStr[0].length;
+  for (let i = 0; i < splitStr.length; i++) {
+    if (splitStr[i].length > wordLength) {
+      wordLength = splitStr[i].length;
+    } 
+  }
+  return wordLength;
+}
+
+
