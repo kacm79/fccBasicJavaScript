@@ -60,5 +60,4 @@ if (target == actualEnding) {
   return true;
 } return false;
 }
-confirmEnding("Bastian", "n");
 
