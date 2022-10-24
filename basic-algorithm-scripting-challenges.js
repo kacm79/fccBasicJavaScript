@@ -61,3 +61,14 @@ if (target == actualEnding) {
 } return false;
 }
 
+//Repeat a string repeat a string
+
+function repeatStringNumTimes(str, num) {
+  let repeatedStringArray =[];
+  for (let i = 0; i < num; i++) {
+    repeatedStringArray.push(str);
+  }
+  return repeatedStringArray.join("");
+}
+
+
