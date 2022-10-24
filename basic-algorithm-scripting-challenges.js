@@ -50,4 +50,15 @@ function largestOfFour(arr) {
   return largestNumbers;
 }
 
+//Confirm the ending
+
+function confirmEnding(str, target) {
+
+  let actualEnding = str.substring(str.length-target.length, str.length);
+
+if (target == actualEnding) {
+  return true;
+} return false;
+}
+confirmEnding("Bastian", "n");
 
