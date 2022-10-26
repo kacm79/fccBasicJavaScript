@@ -7,6 +7,7 @@ function reverseString(str) {
   return newString;
 }
 
+
 //Factorialise a number
 
 function factorialize(num) {
@@ -22,6 +23,7 @@ let multipliedResult = 1;
   }
   return multipliedResult;
 }
+
 
 //Find the longest word in a string
 
@@ -50,6 +52,7 @@ function largestOfFour(arr) {
   return largestNumbers;
 }
 
+
 //Confirm the ending
 
 function confirmEnding(str, target) {
@@ -61,6 +64,7 @@ if (target == actualEnding) {
 } return false;
 }
 
+
 //Repeat a string repeat a string
 
 function repeatStringNumTimes(str, num) {
@@ -71,12 +75,25 @@ function repeatStringNumTimes(str, num) {
   return repeatedStringArray.join("");
 }
 
+
 //Truncate a string
 
 function truncateString(str, num) {
 if (str.length > num) {
   return str.substr(0, num) + "...";
   } return str; 
+}
+
+
+//Title case in a string
+
+function titleCase(str) {
+ const splitSentence = str.toLowerCase().split(" ");
+ let capitalisedSentence =[];
+ for (let i=0; i < splitSentence.length; i++) {
+   capitalisedSentence.push(splitSentence[i].charAt(0).toUpperCase() + splitSentence[i].substring(1));
+ }
+ return capitalisedSentence.join(" ");
 }
 
 
