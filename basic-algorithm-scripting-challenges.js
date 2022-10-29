@@ -97,3 +97,14 @@ function titleCase(str) {
 }
 
 
+//Slice and splice
+
+function frankenSplice(arr1, arr2, n) {
+let bothArrays = arr2.slice();
+  bothArrays.splice(n, 0, ...arr1);
+return bothArrays;
+}
+
+
+
+
