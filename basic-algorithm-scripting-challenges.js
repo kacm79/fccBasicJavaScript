@@ -106,5 +106,17 @@ return bothArrays;
 }
 
 
+//Where do I belong
+
+function getIndexToIns(arr, num) {
+arr.push(num);
+  arr.sort(function(a, b){return a-b});
+  const findTheIndex = (i) => i === num;
+return arr.findIndex(findTheIndex);
+}
+
+
+
+
 
 
