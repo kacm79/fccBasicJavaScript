@@ -116,6 +116,19 @@ return arr.findIndex(findTheIndex);
 }
 
 
+//Mutations
+
+function mutation(arr) {
+  let element1 = arr[0].toLowerCase().split('');
+  let element2 = arr[1].toLowerCase().split('');
+  for (i = 0; i < element2.length; i++) {
+    if (element1.indexOf(element2[i]) === -1) {
+      return false;
+    }
+  } return true;
+}
+
+
 
 
 
